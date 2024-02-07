@@ -24,7 +24,6 @@ RUN mkdir /app/
 
 # Copy local files to the container
 COPY  pom.xml /app/.
-COPY  index.jsp /app/.
 COPY  src     /app/src
 # Set the working directory in the container
 WORKDIR /app
