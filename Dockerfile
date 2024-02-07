@@ -32,7 +32,7 @@ WORKDIR /app
 RUN mvn --version
 
 # Build the .war file using Maven
-RUN mvn clean package
+RUN mvn package
 
 # Define a volume to mount to the host directory
 VOLUME ["/app/opt"]
